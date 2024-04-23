@@ -4,7 +4,7 @@ import { SubmitKey } from "../store/config";
 const isApp = !!getClientConfig()?.isApp;
 
 const cn = {
-  WIP: "该功能仍在开发中……",
+  WIP: "该功能暂不可用",
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
@@ -12,9 +12,9 @@ const cn = {
   },
   Auth: {
     Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
-    SubTips: "或者输入你的 OpenAI 或 Google API 密钥",
-    Input: "在此处填写访问码",
+    Tips: "管理员开启了密码验证，请在下方填入访问密码",
+    SubTips: "或者输入你的 API 密钥",
+    Input: "在此处填写访问密码",
     Confirm: "确认",
     Later: "稍后再说",
   },
@@ -72,7 +72,7 @@ const cn = {
       if (submitKey === String(SubmitKey.Enter)) {
         inputHints += "，Shift + Enter 换行";
       }
-      return inputHints + "，/ 触发补全，: 触发命令";
+      return inputHints + "，: 触发命令";
     },
     Send: "发送",
     Config: {
@@ -377,7 +377,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: "欢迎使用TminGPT，在下方输入内容以开始。注意：由于资费问题，请使用GPT3.5模型(gpt-3.5-turbo)。如果必须使用GPT4，请节约使用，避免让GPT发送大段文字。",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
@@ -460,7 +460,7 @@ const cn = {
   },
 
   URLCommand: {
-    Code: "检测到链接中已经包含访问码，是否自动填入？",
+    Code: "检测到链接中已经包含访问密码，是否自动填入？",
     Settings: "检测到链接中包含了预制设置，是否自动填入？",
   },
 

@@ -157,6 +157,9 @@ const openaiModels = [
   "gpt-4-turbo-preview",
   "gpt-4-vision-preview",
   "gpt-4-turbo-2024-04-09",
+  "claude-3-sonnet",
+  "claude-3-opus",
+  "claude-3-haiku",
 ];
 
 const googleModels = [
