@@ -535,7 +535,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "欢迎使用TminGPT，在下方输入内容以开始。注意：由于资费问题，请使用GPT3.5模型(gpt-3.5-turbo)。如果必须使用GPT4，请节约使用，避免让GPT发送大段文字。",
+    BotHello: "欢迎使用TminGPT，在下方输入内容以开始。默认使用gpt-4o-mini模型，你可以在下方修改为希望使用的模型",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
