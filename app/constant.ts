@@ -382,7 +382,7 @@ export const DEFAULT_MODELS = [
   })),
   ...openaiModels.map((name) => ({
     name,
-    available: false,
+    available: true,
     sorted: seq++,
     provider: {
       id: "azure",
